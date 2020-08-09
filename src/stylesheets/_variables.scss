@@ -1,0 +1,60 @@
+@import "~bootstrap/scss/bootstrap";
+
+$drk-pink: #B01C81;
+$pink: #DE23A3;
+$drk-purple: #5F2E85;
+$purple: #8943BD;
+$drk-teal: #3AA694;
+$teal: #4DDBC4;
+$drk-green: #508538;
+$green: #77BD43;
+$grey: #8D8F91;
+$drk-grey: #575859;
+$lght-grey: #E0E1E2;
+$black: #1B1C1D;
+$white: #FFFFFF;
+
+$primary: $green;
+$dark: $black;
+
+$link-color: $green;
+
+$colors:
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $grey,
+    "gray-dark":  $drk-grey
+);
+
+$theme-colors: (
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "dark-pink":   $drk-pink,
+    "pink":       $pink,
+    "dark-purple": $drk-purple,
+    "purple":     $purple,
+    "dark-teal":  $drk-teal,
+    "teal":       $teal,
+    "dark-green": $drk-green,
+    "green":      $green,
+    "grey":       $grey,
+    "dark-grey":  $drk-grey,
+    "light-grey": $lght-grey)
+);

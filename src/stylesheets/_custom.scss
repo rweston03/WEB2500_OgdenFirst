@@ -1,0 +1,200 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+.jumbotron {
+    text-align: center;
+}
+
+.card {
+    border: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+.card-img-overlay h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+
+    @media (min-width: 480px) {
+        font-size: 4rem;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 6rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+
+    @media (min-width: 480px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 4rem;
+    }
+}
+
+footer {
+    color: $white;
+    
+    & h2, & i {
+        font-size: 1.5rem;
+    }
+
+}
+
+.card-img-overlay {
+    h3 {
+        font-size: 1.75rem;
+
+        @media (min-width: 380px) {
+            font-size: 2rem;
+        }
+
+        @media (min-width: 500px) {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 3rem;
+        }
+    }
+
+    h3.big {
+        @media (min-width: 1000px) {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        font-size: 1.15rem;
+        line-height: 1.15rem;
+
+        @media (min-width: 480px) {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+
+        }
+
+        @media (min-width: 768px) {
+            font-size: 1rem;
+        }
+
+        @media (min-width: 1000px) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.card-body h3 {
+    font-size: 1.25rem;
+}
+
+.card .card-img-overlay .small {
+    font-size: 1.25rem;
+
+    @media (min-width: 480px) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+a.navbar-brand {
+
+    img {
+        height: 65px;
+        width: 75px;
+
+        @media (min-width: 380px) {
+            height: 80px;
+            width: 95px;
+        }
+    }
+
+    h2 {
+        display: inline;
+        font-size: 1.5rem;
+        
+        @media (min-width: 380px) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.breadcrumb {
+    background-color: white;
+}
+
+nav.breadcrumb {
+    & ol.breadcrumb {
+        margin-bottom: 0;
+    }
+}
+
+.artist-img {
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 2px 2px 3px $drk-grey;
+}
+
+$border-colors: ("dark-pink": $drk-pink,
+    "pink": $pink,
+    "dark-purple": $drk-purple,
+    "purple": $purple,
+    "dark-teal": $drk-teal,
+    "teal": $teal,
+    "dark-green": $drk-green,
+    "green": $green,
+    "white": $white, );
+
+@each $name,
+$b-color in $border-colors {
+    .border-#{$name} {
+        border: 3px solid #{$b-color};
+        box-shadow: 2px 2px 3px rgba($b-color, .8);
+    }
+
+    .border-txt-#{$name} {
+        color: white;
+        text-shadow: 4px 4px 5px rgba($b-color, .8);
+    }
+
+    .form-hdr-#{$name} {
+        background-color: #{$b-color};
+        color: $white;
+        box-shadow: 2px 2px 3px rgba($b-color, .9);
+    }
+
+    .color-#{$name} {
+        color: #{$b-color};
+    }
+
+    .background-fade-#{$name} {
+        background-color: rgba($b-color, .8);
+    }
+}
+
+.btn {
+    color: $white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 15;
+}
